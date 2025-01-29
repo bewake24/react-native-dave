@@ -4,7 +4,7 @@
     "slug": "01Tut",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "https://st2.depositphotos.com/3757793/5273/v/380/depositphotos_52739053-stock-illustration-app-icons-background.jpg", // Set APP ICON
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,21 +13,21 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "https://cdn-icons-png.flaticon.com/512/588/588846.png", // Set Android Icon
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "https://cdn-icons-png.flaticon.com/512/588/588846.png" // Set Web Icon
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "https://cdn-icons-png.flaticon.com/512/588/588846.png", // Set Splash Icon: Appears before the app loads
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
