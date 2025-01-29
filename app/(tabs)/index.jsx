@@ -1,6 +1,13 @@
-import { View, Text, StyleSheet, ImageBackground } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  ImageBackground,
+  Pressable,
+} from "react-native";
 import React from "react";
 import { primaryColor } from "../../constants/styles";
+import { Link } from "expo-router";
 
 const App = () => {
   return (
@@ -12,7 +19,11 @@ const App = () => {
     >
       <View style={styles.view}>
         <Text style={styles.text}>App</Text>
-        <Text style={styles.text}>Changes</Text>
+        <Link href={"/contact"} asChild>
+          <Pressable>
+            <Text style={styles.link}>Contact</Text>
+          </Pressable>
+        </Link>
       </View>
     </ImageBackground>
   );
@@ -40,5 +51,10 @@ const styles = StyleSheet.create({
     padding: 16,
     backgroundColor: "rgba(0, 0, 0, 0.5)",
     color: primaryColor,
+  },
+  link: {
+    marginTop: 15,
+    paddingVertical: 15,
+    color: "#fff",
   },
 });
