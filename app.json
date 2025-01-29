@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "lesson01",
-    "slug": "lesson01",
+    "name": "01Tut",
+    "slug": "01Tut",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/splashLogo.png",
+    "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -27,7 +27,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splashLogo.png",
+          "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
