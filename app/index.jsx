@@ -6,7 +6,7 @@ import {
   Pressable,
 } from "react-native";
 import React from "react";
-import { primaryColor } from "../../constants/styles";
+import { primaryColor } from "../constants/styles";
 import { Link } from "expo-router";
 
 const App = () => {
@@ -22,6 +22,16 @@ const App = () => {
         <Link href={"/contact"} asChild>
           <Pressable>
             <Text style={styles.link}>Contact</Text>
+          </Pressable>
+        </Link>
+        <Link href={"/menu"} asChild>
+          <Pressable>
+            <Text style={styles.link}>Events</Text>
+          </Pressable>
+        </Link>
+        <Link href={"/categories"} asChild>
+          <Pressable>
+            <Text style={styles.link}>Categories</Text>
           </Pressable>
         </Link>
       </View>
